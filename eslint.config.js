@@ -18,7 +18,13 @@ export default tseslint.config(
       // Regra de privacidade: nada de console em código de produção
       // (evita vazar dados fiscais em logs). Scripts de CLI liberados abaixo.
       'no-console': 'error',
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     },
+  },
+  {
+    // Nos testes, `!` depois de um índice é aceitável: se o valor faltar, o teste falha.
+    files: ['**/*.test.{ts,tsx}'],
+    rules: { '@typescript-eslint/no-non-null-assertion': 'off' },
   },
   {
     files: ['scripts/**/*.ts'],

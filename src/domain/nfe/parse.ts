@@ -4,7 +4,6 @@ import type {
   IcmsItem,
   IpiItem,
   ItemNotaFiscal,
-  NotaFiscal,
   PisCofinsItem,
   ResultadoLeituraNFe,
 } from './types';
@@ -119,20 +118,30 @@ function lerNFeInterno(xml: string): ResultadoLeituraNFe {
 
   if (erros.length > 0) return { ok: false, erros };
 
-  // Daqui em diante, sem erros, todos os campos obrigatórios foram lidos.
+  // Sem erros registrados, todos os campos obrigatórios devem ter sido lidos.
+  // A checagem explícita garante isso sem confiar só na lógica acima.
+  if (
+    chave === undefined || numero === undefined || emissao === undefined || finalidade === undefined ||
+    naturezaOperacao === undefined || idDest === undefined || indFinal === undefined ||
+    !isUF(ufEmit) || crt === undefined || ufDest === undefined || (ufDest !== 'EX' && !isUF(ufDest)) ||
+    indIEDest === undefined || itens.some((i) => i === undefined)
+  ) {
+    return { ok: false, erros: ['Erro interno: campo obrigatório não lido e sem mensagem de erro. Avise o desenvolvedor.'] };
+  }
+
   return {
     ok: true,
     nota: {
-      chave: chave!,
-      numero: numero!,
-      emissao: emissao!,
-      finalidade: finalidade!,
-      naturezaOperacao: naturezaOperacao!,
-      idDest: idDest!,
-      indFinal: indFinal!,
-      emitente: { uf: ufEmit as NotaFiscal['emitente']['uf'], crt: crt!, ...(cnae ? { cnae } : {}) },
-      destinatario: { uf: ufDest as NotaFiscal['destinatario']['uf'], indIEDest: indIEDest! },
-      itens: itens as ItemNotaFiscal[],
+      chave,
+      numero,
+      emissao,
+      finalidade,
+      naturezaOperacao,
+      idDest,
+      indFinal,
+      emitente: { uf: ufEmit, crt, ...(cnae ? { cnae } : {}) },
+      destinatario: { uf: ufDest, indIEDest },
+      itens: itens.filter((i): i is ItemNotaFiscal => i !== undefined),
     },
   };
 }
