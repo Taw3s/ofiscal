@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FIXTURE SINTÉTICA. CNPJ, CPF, nomes, endereços, telefones e e-mails são fictícios.
+     vCredICMSSN = vProd (1000,00) × pCredSN (3,12%) = 31,20. -->
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe31260344555666000181550010000005011345678905" versao="4.00">
+      <ide>
+        <cUF>31</cUF>
+        <cNF>34567890</cNF>
+        <natOp>VENDA DE MERCADORIA ADQUIRIDA DE TERCEIROS</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>501</nNF>
+        <dhEmi>2026-03-15T09:00:00-03:00</dhEmi>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>3106200</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>5</cDV>
+        <tpAmb>2</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>1</indPres>
+        <procEmi>0</procEmi>
+        <verProc>FIXTURE-1.0</verProc>
+      </ide>
+      <emit>
+        <CNPJ>44555666000181</CNPJ>
+        <xNome>COMERCIO FICTICIO DO SIMPLES ME</xNome>
+        <enderEmit>
+          <xLgr>RUA DO SIMPLES FICTICIO</xLgr>
+          <nro>50</nro>
+          <xBairro>BAIRRO FICTICIO</xBairro>
+          <cMun>3106200</cMun>
+          <xMun>BELO HORIZONTE</xMun>
+          <UF>MG</UF>
+          <CEP>30000000</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>31966660000</fone>
+        </enderEmit>
+        <IE>0010000010001</IE>
+        <CRT>1</CRT>
+      </emit>
+      <dest>
+        <CPF>12345678909</CPF>
+        <xNome>PRODUTOR RURAL FICTICIO</xNome>
+        <enderDest>
+          <xLgr>ESTRADA FICTICIA KM 10</xLgr>
+          <nro>SN</nro>
+          <xBairro>ZONA RURAL</xBairro>
+          <cMun>3106200</cMun>
+          <xMun>BELO HORIZONTE</xMun>
+          <UF>MG</UF>
+          <CEP>30001000</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>31955550000</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>0020000020002</IE>
+        <email>produtor@rural-ficticio.example</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>FERR-777</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>FERRAMENTA AGRICOLA FICTICIA</xProd>
+          <NCM>82011000</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>10.0000</qCom>
+          <vUnCom>100.0000000000</vUnCom>
+          <vProd>1000.00</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>10.0000</qTrib>
+          <vUnTrib>100.0000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMSSN101>
+              <orig>0</orig>
+              <CSOSN>101</CSOSN>
+              <pCredSN>3.1200</pCredSN>
+              <vCredICMSSN>31.20</vCredICMSSN>
+            </ICMSSN101>
+          </ICMS>
+          <PIS>
+            <PISOutr>
+              <CST>49</CST>
+              <vBC>0.00</vBC>
+              <pPIS>0.0000</pPIS>
+              <vPIS>0.00</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>49</CST>
+              <vBC>0.00</vBC>
+              <pCOFINS>0.0000</pCOFINS>
+              <vCOFINS>0.00</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>0.00</vBC><vICMS>0.00</vICMS><vICMSDeson>0.00</vICMSDeson><vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST><vST>0.00</vST><vFCPST>0.00</vFCPST><vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>1000.00</vProd><vFrete>0.00</vFrete><vSeg>0.00</vSeg><vDesc>0.00</vDesc>
+          <vII>0.00</vII><vIPI>0.00</vIPI><vIPIDevol>0.00</vIPIDevol><vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS><vOutro>0.00</vOutro><vNF>1000.00</vNF>
+        </ICMSTot>
+      </total>
+      <transp><modFrete>9</modFrete></transp>
+      <pag><detPag><tPag>01</tPag><vPag>1000.00</vPag></detPag></pag>
+      <infAdic>
+        <infCpl>DOCUMENTO EMITIDO POR ME OU EPP OPTANTE PELO SIMPLES NACIONAL. PERMITE O APROVEITAMENTO DO CREDITO DE ICMS NO VALOR DE R$ 31,20; CORRESPONDENTE A ALIQUOTA DE 3,12%.</infCpl>
+      </infAdic>
+    </infNFe>
+  </NFe>
+  <protNFe versao="4.00">
+    <infProt>
+      <tpAmb>2</tpAmb>
+      <verAplic>FIXTURE</verAplic>
+      <chNFe>31260344555666000181550010000005011345678905</chNFe>
+      <dhRecbto>2026-03-15T09:01:00-03:00</dhRecbto>
+      <nProt>131000000000003</nProt>
+      <digVal>CCCCCCCCCCCCCCCCCCCCCCCCCCC=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>
