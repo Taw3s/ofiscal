@@ -1,0 +1,40 @@
+{
+  "$comentario": "Alíquotas interestaduais de ICMS. Valores e listas de UF vieram do briefing da Fase 0 e ainda NÃO foram conferidos por contador no texto das resoluções. Vigência deixada em branco (null) de propósito: confirmar a data de início de cada resolução.",
+  "conjunto": "icms-interestadual",
+  "regras": [
+    {
+      "id": "icms-interestadual-4-importados",
+      "descricao": "Mercadoria com origem 1, 2, 3 ou 8 (importada ou com conteúdo de importação): 4% em qualquer rota interestadual",
+      "escopo": { "origensMercadoria": [1, 2, 3, 8] },
+      "valor": 4,
+      "status": "nao_validado",
+      "fonte": "Resolução do Senado Federal nº 13/2012 (regra informada no briefing da Fase 0; texto não conferido)",
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interestadual-7-sul-sudeste-para-demais",
+      "descricao": "Saída de SP, RJ, MG, PR, SC ou RS para UF do Norte, Nordeste, Centro-Oeste ou ES: 7%",
+      "escopo": {
+        "origensMercadoria": [0, 4, 5, 6, 7],
+        "ufsOrigem": ["SP", "RJ", "MG", "PR", "SC", "RS"],
+        "ufsDestino": [
+          "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT",
+          "MS", "PA", "PB", "PE", "PI", "RN", "RO", "RR", "SE", "TO"
+        ]
+      },
+      "valor": 7,
+      "status": "nao_validado",
+      "fonte": "Resolução do Senado Federal nº 22/1989 (regra informada no briefing da Fase 0; texto não conferido)",
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interestadual-12-demais",
+      "descricao": "Demais operações interestaduais com mercadoria de origem 0, 4, 5, 6 ou 7: 12%",
+      "escopo": { "origensMercadoria": [0, 4, 5, 6, 7] },
+      "valor": 12,
+      "status": "nao_validado",
+      "fonte": "Resolução do Senado Federal nº 22/1989 (regra informada no briefing da Fase 0; texto não conferido)",
+      "vigenciaInicio": null
+    }
+  ]
+}

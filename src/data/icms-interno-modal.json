@@ -1,0 +1,303 @@
+{
+  "$comentario": "Alíquota modal interna de ICMS por UF. NENHUM valor foi preenchido de memória. Só TO tem valor, informado verbalmente e ainda não conferido. Para preencher uma UF, veja a seção 'Como adicionar uma regra' do README.",
+  "conjunto": "icms-interno-modal",
+  "regras": [
+    {
+      "id": "icms-interno-modal-ac",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em AC",
+      "escopo": {
+        "uf": "AC"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-al",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em AL",
+      "escopo": {
+        "uf": "AL"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-ap",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em AP",
+      "escopo": {
+        "uf": "AP"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-am",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em AM",
+      "escopo": {
+        "uf": "AM"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-ba",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em BA",
+      "escopo": {
+        "uf": "BA"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-ce",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em CE",
+      "escopo": {
+        "uf": "CE"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-df",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em DF",
+      "escopo": {
+        "uf": "DF"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-es",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em ES",
+      "escopo": {
+        "uf": "ES"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-go",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em GO",
+      "escopo": {
+        "uf": "GO"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-ma",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em MA",
+      "escopo": {
+        "uf": "MA"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-mt",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em MT",
+      "escopo": {
+        "uf": "MT"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-ms",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em MS",
+      "escopo": {
+        "uf": "MS"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-mg",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em MG",
+      "escopo": {
+        "uf": "MG"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-pa",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em PA",
+      "escopo": {
+        "uf": "PA"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-pb",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em PB",
+      "escopo": {
+        "uf": "PB"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-pr",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em PR",
+      "escopo": {
+        "uf": "PR"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-pe",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em PE",
+      "escopo": {
+        "uf": "PE"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-pi",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em PI",
+      "escopo": {
+        "uf": "PI"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-rj",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em RJ",
+      "escopo": {
+        "uf": "RJ"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-rn",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em RN",
+      "escopo": {
+        "uf": "RN"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-rs",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em RS",
+      "escopo": {
+        "uf": "RS"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-ro",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em RO",
+      "escopo": {
+        "uf": "RO"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-rr",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em RR",
+      "escopo": {
+        "uf": "RR"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-sc",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em SC",
+      "escopo": {
+        "uf": "SC"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-sp",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em SP",
+      "escopo": {
+        "uf": "SP"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-se",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em SE",
+      "escopo": {
+        "uf": "SE"
+      },
+      "valor": null,
+      "status": "pendente",
+      "fonte": null,
+      "vigenciaInicio": null
+    },
+    {
+      "id": "icms-interno-modal-to",
+      "descricao": "Alíquota modal (padrão) interna de ICMS em TO",
+      "escopo": {
+        "uf": "TO"
+      },
+      "valor": 20,
+      "status": "nao_validado",
+      "fonte": "citado por um contador em conversa; confirmar no RICMS/TO",
+      "vigenciaInicio": null
+    }
+  ]
+}
